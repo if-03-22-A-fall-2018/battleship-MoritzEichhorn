@@ -19,8 +19,8 @@ static CellContent op[FIELDSIZE][FIELDSIZE];
 static CellContent my_guesses[FIELDSIZE][FIELDSIZE];
 
 void load_game() {
-  FILE *my_fd = fopen("battleship.my", "r+");
-	FILE *op_fd = fopen("battleship.op", "r+");
+  FILE *my_fd = fopen("battleship.my", "r");
+	FILE *op_fd = fopen("battleship.op", "r");
 
   for(int i = 0; i < FIELDSIZE; i++)
   {
